@@ -56,7 +56,7 @@ $(document).ready(function(){
   
       $('.result').addClass('hide').html('');
       $('.bird').css({
-        'top': '50%',
+        'top': '35%',
         'left': 0
       });
       $('.timer').html(0);

@@ -14,12 +14,21 @@ body{
     color: rgb(67, 68, 68)
 }
 
-.sky{
+.background{
     background: url('../images/background.png') repeat-x;
     position: absolute;
     width: 100vw;
     height: 100%;
-    animation: clouds 4s linear infinite;
+    animation: sceen 6s linear infinite;
+}
+
+@keyframes sceen{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -1452px 0;
+    }
 }
 
 .racing-flag{
@@ -78,29 +87,100 @@ body{
     position: absolute;
     width: 85px;
     height: 100px;
-    top: 35%;
+    top: 33%;
     right: 0;
     bottom: 0;
-    left: 0;
-    animation: bird 300ms steps(4) infinite alternate;
+    left: 0;;
+    animation: fly 300ms steps(4) infinite alternate;
     z-index: 99;
     transition: top 500ms, left 500ms;
 }
 
-@keyframes clouds{
-    from{
-        background-position: 0 0;
-    }
-    to{
-        background-position: -1452px 0;
-    }
-}
 
-@keyframes bird{
+@keyframes fly{
     from{
         background-position: 0 0;
     }
     to{
         background-position: -340px 0;
+    }
+}
+.bird1{
+    background: url('../images/angry_bird1.png') no-repeat;
+    position: absolute;
+    width: 183.60px;
+    height: 168.67px;
+    top: 18%;
+    left: -30px;
+    zoom: .6;
+    animation: fly1 300ms steps(3) infinite alternate;
+
+}
+
+@keyframes fly1{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 -506px;
+    }
+}
+
+.bird2{
+    background: url('../images/angry_bird2.png') no-repeat;
+    position: absolute;
+    width: 284.67px;
+    height: 312px;
+    top: 53%;
+    left: 0px;
+    zoom: .25;
+    animation: fly2 300ms steps(3) infinite alternate;
+
+}
+
+@keyframes fly2{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 -936px;
+    }
+}
+
+.background2{
+    position: absolute;
+    background: url('../images/background2.png') repeat-x;
+    top: 35px;
+    bottom: 0;
+    width: 1923px;
+    height: 225px;
+    animation: back 6s linear infinite;
+}
+
+@keyframes back {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -623px 0;
+    }
+}
+.bird3{
+    position: absolute;
+    background: url('../images/Bird.png') repeat-x;
+    top: 0px;
+    bottom: 4px;
+    width: 1600px;
+    height: 304px;
+    z-index: 99;
+    animation: fly3 6s linear infinite;
+}
+
+@keyframes fly3 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
     }
 }
